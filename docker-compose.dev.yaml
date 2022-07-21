@@ -1,0 +1,9 @@
+version: '3'
+services:
+  next-container:
+    container_name: next-container
+    image: 82xcherodinger/next-container:28
+    volumes:
+      - ./:/app
+    ports:
+      - "3000:3000"
