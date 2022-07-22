@@ -4,7 +4,7 @@ pipeline {
     stage('Deploying Production') {
       steps{
         script {
-          sh 'cd ~/next-container && docker-compose up -d'
+          sh 'cd /home/deploy/next-container && docker-compose up -d'
         }
       }
     }
